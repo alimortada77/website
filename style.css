@@ -1,29 +1,142 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and font styling */
 body {
-  background-color: #F2EFE7;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-hr {
-  border-style: dotted none none;
-  border-color: #9ACBD0;
-  border-width: 5px;
-  width: 100%;
+/* Header Section */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
 }
 
-h1 {
-  color: #48A6A7;
+header h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
 }
 
-h3 {
-  color: #48A6A7;
+header p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    animation: fadeIn 2s ease-in-out;
+    animation-delay: 0.5s;
 }
 
-.profile_img {
-  border-radius: 100%;
-  hieght: 200px;
-  width: 200px;
-
+/* Section styles */
+section {
+    padding: 40px 0;
+    text-align: center;
 }
 
-#my_name {
-  color: #2973B2;
+h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* About Me Section */
+#about {
+    background-color: #fff;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#skills li {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* Projects Section */
+#projects .project-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 45%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-out;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Contact Section */
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
