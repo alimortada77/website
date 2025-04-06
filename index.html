@@ -1,59 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-      <meta charset="utf-8">
-      <title>Ali Mortada</title>
-      <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <table cellspacing="20">
-        <tr>
-            <td><img class="profile_img" src="data:data:image/jpeg;base64,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" ali="Al Imam Ali"></td>
-            <td><h1 id="my_name">Ali Mortada</h1>
-            <p>Beginner web Developer <br> I'am grade 10 student <br>I love (نسكافيه)☕(:</p></td>
-        </tr>
-    </table>
-    <hr>
-    <h3>About Me</h3>
-    <ul>
-        <li>Ali Hassan Mortada</li>
-        <li>Birth Day: 1/8/2009</li>
-        <li>From Lebanon, Aaita El Jabal</li>
-    </ul>
-    <hr>
-    <h3>Skills</h3>
-    <table border="1">
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <td>Coding:</td>
-                        <td>50%</td>
-                    </tr>
-                    <tr>
-                        <td>Gaming:</td>
-                        <td>70%</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <td>Cooking:</td>
-                        <td>20%</td>
-                    </tr>
-                    <tr>
-                        <td>Drive:</td>
-                        <td>60%</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <a href="learn.html">What I am Learning</a><br>
-    <a href="my_hobbies.html">My Hobbies</a><br>
-    <a href="contact_me.html">Contact Me</a>
-    <hr>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ali Mortada - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Hi, I'm Ali Mortada</h1>
+            <p>Web Developer & Designer</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a passionate web developer with a focus on creating clean, modern, and user-friendly websites. I specialize in front-end development and have a keen interest in design.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>Web Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Project 1</h3>
+                    <p>Created a personal website using HTML, CSS, and JavaScript. Fully responsive design.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Project 2</h3>
+                    <p>Built a web app using React and Firebase for real-time data updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to email me at <a href="mailto:alimortada@example.com">alimortada@example.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Ali Mortada. All rights reserved.</p>
+    </footer>
+</body>
 </html>
